@@ -10,6 +10,34 @@
 		<title>Secret Message</title>
 	</head>
 	<body>
+		<main>
+			<div class="secret-container">
+				<form action="#" class="secret-form" id="form">
+					<input
+						type="text"
+						class="secret-input"
+						id="secret-input"
+						placeholder="Enter your secret message"
+					/>
+          <button type="submit">Encrypt</button>
+				</form>
+				<p>
+					Enter your secret message and press the "Encrypt" button for an
+					encrypted URL for your secret message.
+				</p>
+			</div>
+
+			<div class="encryption-container hidden">
+				<input type="text" class="encryption-input" id="encryption-input" />
+				<p>Share this link containing your encrypted message</p>
+			</div>
+
+			<div class="message-container hidden">
+				<h2></h2>
+				<a href="./index.html">Create secret message</a>
+			</div>
+		</main>
+
 		<script src="app.js"></script>
 	</body>
 </html>
